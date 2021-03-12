@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <title>Médiatèque</title>
+</head>
+
+<body>
+  <h1>Liste des films</h1>
+
+
+  <button class="open-button" onclick="openForm()">Ajouter un Film</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+
+
+      <label for="titre"><b>titre</b></label>
+      <input type="text"  placeholder="" name="titre" id="get_titre" required>
+
+      <label for="année"><b>année</b></label>
+      <input type="text" class="datepicker"  placeholder="" name="année" id="datepicker1" required>
+
+      <label for="auteur"><b>auteur</b></label>
+      <input type="text" placeholder="" name="auteur" id="get_auteur" required>
+
+      <button type="submit" class="btn" onclick="myCreateFunction(),get_input()">Ajouter</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+    </form>
+  </div>
+
+
+  <div  class="filtre">
+    <form action="">
+    <label for="Filter">Filtrer par:</label>
+    <br>
+    <select NAME="list" id="filtres">
+      <option value="1" onclick="sortbyyears()"  selected>année</option>
+      <option value="2">titre</option>
+    </select>
+    <INPUT TYPE="button"NAME="b" VALUE="appliquer" onClick="liste(form5)">
+    </form>
+  </div>
+
+  <br>
+
+
+  <table class="paleBlueRows" id="table">
+  </table>
+  <input type="button" value="Supprimer" id="supp" onclick="deleteRow(this)">
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body{
+    background-color: aliceblue;
+    display: flexbox;
+    
+}
+
+#filtres{
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+
+.open-button {
+    background-color: rgb(22, 41, 214);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 1;
+    position: fixed;
+
+  }
+
+  .ui-datepicker-calendar {
+    display: none;
+ }
+
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    border: 3px solid #f1f1f1;
+  }
+
+  .form-container {
+    width: 800px;
+    height: 30px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+.filtre{
+    padding-top: 100px;
+}
+
+
+table.paleBlueRows {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid #FFFFFF;
+  width: 1500px;
+  height: 200px;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+  border-top: 1px solid #000000;
+  padding: 6px ;
+}
+table.paleBlueRows tbody td {
+  font-size: 19px;
+}
+table.paleBlueRows tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.paleBlueRows thead {
+  background: #e7eef1;
+}
+table.paleBlueRows thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+
+}
+table.paleBlueRows thead th:first-child {
+  border-left: none;
+}
+
+
+
+
+#supp{
+  background-color: rgb(141, 13, 13);
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  padding: 11px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 1;
+}
